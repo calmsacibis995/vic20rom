@@ -35,7 +35,7 @@ ready	lda #<reddy
 	ldy #>reddy
 	jsr strout
 	lda #$80	; direct messages on
-	jst setmsg	; from kernal
+	jsr setmsg	; from kernal
 
 main	jmp (imain)
 nmain	jsr inlin
